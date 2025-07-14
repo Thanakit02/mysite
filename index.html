@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>รายชื่อนักศึกษา</title>
+  <title>ข้อมูลส่วนตัวนักศึกษา</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f0f0;
+      padding: 40px;
     }
-    h1 {
+
+    .profile-card {
+      background-color: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       text-align: center;
-      color: #333;
     }
-    .students-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+      margin-bottom: 20px;
     }
-    .student-card {
-      background: #fff;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 10px;
+
+    .profile-card h2 {
+      margin: 10px 0 5px;
+      color: #2c3e50;
     }
-    .student-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
+
+    .profile-card p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 16px;
     }
-    .student-name {
-      margin-top: 8px;
+
+    .profile-card .email {
+      margin-top: 10px;
       font-weight: bold;
+      color: #2980b9;
     }
   </style>
 </head>
 <body>
-  <h1>รายชื่อนักศึกษา</h1>
-  <div class="students-grid">
-    <div class="student-card">
-      <img src="student1.jpg" alt="Student 1">
-      <div class="student-name">สมชาย ใจดี</div>
-    </div>
-    <div class="student-card">
-      <img src="student2.jpg" alt="Student 2">
-      <div class="student-name">สมหญิง สวยมาก</div>
-    </div>
-    <div class="student-card">
-      <img src="student3.jpg" alt="Student 3">
-      <div class="student-name">วิทยา เก่งมาก</div>
-    </div>
-    <!-- เพิ่มนักศึกษาเพิ่มได้ตามต้องการ -->
+
+  <div class="profile-card">
+    <!-- 🔁 เปลี่ยนลิงก์ภาพตรง src ได้ -->
+    <img src="https://i.pravatar.cc/300?img=12" alt="My Profile Picture">
+
+    <h2>พัฒนพงศ์ ชัยสวัสดิ์</h2>
+    <p><strong>รหัสนักศึกษา:</strong> 6512345678</p>
+    <p><strong>ชั้นปี:</strong> ปี 3</p>
+    <p><strong>สาขา:</strong> วิทยาการคอมพิวเตอร์</p>
+    <p class="email">6512345678@student.university.ac.th</p>
   </div>
+
 </body>
 </html>
